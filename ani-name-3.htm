@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani-Name</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+			background: linear-gradient(coral,lightseagreen,yellow);
+			background-attachment: fixed;
+		}
+        .main{
+            height: 200px;
+            width: 500px;
+            margin: 100px auto;
+            padding: 15px;
+            background: transparent;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+        
+        .nam{
+            height: 170px;
+            width: 470px;
+            background: lightseagreen;
+            font-size: 100px;
+            line-height: 150px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: absolute;
+            text-align: center;
+            z-index: 1;
+            animation: harsh 1s linear infinite;
+            
+        }
+
+        .cont{
+            height: 300%;
+            width: 300%;
+            position: absolute;
+            top: -200px;
+            left: -500px;
+            background:conic-gradient(red 45deg,red 90deg,transparent 90deg,transparent 180deg,blue 180deg,blue 270deg,transparent 270deg,transparent 360deg);
+            /* animation: sam 2s linear infinite; */
+		}
+		@keyframes sam{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+
+        @keyframes harsh {
+    0% {
+      background: linear-gradient(60deg, lightgoldenrodyellow 0%, lightcoral 21%, lightsalmon 56%, lightskyblue 88%);
+    }
+
+    20% {
+      background: linear-gradient(120deg, lightgoldenrodyellow 0%, lightcoral 10%, lightsalmon 40%, lightskyblue 60%);
+    }
+
+    40% {
+      background: linear-gradient(180deg, lightgoldenrodyellow 0%, lightcoral 10%, lightsalmon 40%, lightskyblue 60%);
+    }
+
+    60% {
+      background: linear-gradient(240deg, lightgoldenrodyellow 0%, lightcoral 10%, lightsalmon 40%, lightskyblue 60%);
+    }
+
+    80% {
+      background: linear-gradient(300deg, lightgoldenrodyellow 0%, lightcoral 10%, lightsalmon 40%, lightskyblue 60%);
+    }
+
+    100% {
+      background: linear-gradient(360deg, lightgoldenrodyellow 0%, lightcoral 5%, lightsalmon 10%, lightskyblue 40%);
+    }
+   }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nam"> Samarth </div>
+        <div class="cont"></div>
+    </div>
+</body>
+</html>

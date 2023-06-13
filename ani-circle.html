@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Changer-Bubble</title>
+    <style>
+        body{
+            width: 100%;
+            background: lightgoldenrodyellow;
+        }
+         .main 
+        {
+            height: 50px;
+            width: 50px;
+            background: green;
+            margin: 100px auto;
+            border-radius: 50%;
+        }
+        .main .cont 
+        {
+            height: 50px;
+            width: 50px;
+            background: blue;
+            position: relative;
+            opacity: 1;
+            transition: 3s;
+            border-radius: 50%;
+            animation:effect 2s linear infinite ;
+        }
+        .cont .mount
+        {
+            height: 50px;
+            width: 50px;
+            background: red;
+            position: absolute;
+            opacity: 1;
+            transition: 5s;
+            border-radius: 50%;
+            animation:effect 5s linear infinite ;
+        }
+        .cont .hill
+        {
+            height: 50px;
+            width: 50px;
+            background: purple;
+            position: absolute;
+            opacity: 1;
+            transition: 9s;
+            border-radius: 50%;
+            animation:effect 9s linear infinite ;
+        }
+        @keyframes effect 
+        {
+            0%{opacity: 1;transform: scale(1)}
+            100%{opacity: 0;transform: scale(1.6)}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cont">
+            <div class="mount"></div>
+            <div class="hill"></div>
+        </div>
+       
+    </div> 
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ani-Frame</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background: linear-gradient(lightcoral,lightblue,red, green);
+			background-attachment: fixed;
+		}
+		.sam{
+			height: 600px;
+			width: 400px;
+			background: transparent;
+			margin: 100px auto;
+			padding: 15px;
+			position: relative;
+			overflow: hidden;
+		}
+		.h{
+			height: 570px;
+			width: 370px;
+			background: gray;
+			
+			
+		}
+		.a{
+		 height: 200%;
+		 width: 200%;
+		 background: conic-gradient(red 0%,red 25%,transparent 25%,transparent 50%,blue 50%,blue 75%,transparent 75%,transparent 100% );
+		 position: absolute;
+		 top: -300px;
+		 left: -200px;
+		 z-index: -1;
+		 animation: sam 2s linear infinite;
+		}
+		@keyframes sam{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+	</style>
+</head>
+<body>
+	<div class="sam">
+		<div class="h"></div>
+		<div class="a"></div>
+	</div>
+</body>
+</html>
