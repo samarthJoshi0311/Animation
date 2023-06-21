@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .yoga {
+  /* background: lightgray; */
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  margin-left: -200px;
+  margin-top: -250px;
+}
+
+.yoga h1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  font-size: 40px;
+}
+
+.baba {
+    /* background: lightcoral; */
+  position: absolute;
+  left: 90px;
+  background-repeat:no-repeat;
+  background: url(yoga-removebg-preview.png);
+  width: 210px;
+  height: 180px;
+  animation: yogaboy 5s linear alternate infinite;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAAYCAYAAACP6qOQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAgRJREFUeNrsnN9HQ2EYx88qY8QYMSJiiWWMERER0f26SFf9G9EfkP6Grke0u6KrbqKI0dVhxEgxjYjoKuv76HnXac6pw862c959P3zth3NsO+/72fue5z1bqtvtOoSQwZjiISCEIhFCkQihSISQHjNxe0P1+hlbxXKq1R2KRHoUkOw/2+SQxQhe6wNxQ2zXRN7ZNBRplALkkXkfKbL62FBGphP+mR+RToCURr5P5J5CUqQ0UlI5RJJKnxSVCW7nBY1hPeR+beRZpWrq/bYK11ZBSUJFyqgUZb0t6fQpx+aMnLxG2AjYxlXBGhqR7IEixQ+ZVm0jcoa6ihTZv2NFUbPlee5NpbpEaiqa1cS5/C1TtBPkBTlH9ilRYpAp9SZyjDwhN8geR6TxcO1EU/Ei42dNIwWNU45Io6XG/mcVUqy449Ru9BwiS8gR0mI/TCRSar9AdpEVm9sx7sUGqf4caBZ1elBxfqp2WfbV2I063urdrcpkPUkqf7c03ilfQQsQZt1ozvleL5GSeJr9emjt0FFRzLqSiONOijRJFyloxApaszCLsX6Lsn5XN0wyflc19C/Ghr1MiSJZhlnLEK5CbJ9xfpfXvZcNzSLLPvuYEfAvkaM833BDiNB/DLxfNN5R45XnnhRpWCfGDc/jBg8JCUuK/9lAyODwh32EUCRCKBIh1vAlwAC88WnR7g3cuQAAAABJRU5ErkJggg==) center no-repeat;
+  width: 200px;
+  height: 30px;
+}
+
+@keyframes yogaboy {
+  from {
+    bottom: 5%;
+  }
+  to {
+    bottom: 20%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="yoga">
+        <h1 align="center"> International Yoga Day</h1>
+        <div class="baba"></div>
+        <div class="footer"></div>
+      </div>
+</body>
+</html>
